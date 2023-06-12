@@ -4,7 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Newsletter sign-up form</title>
   </head>
-  <body></body>
+  <body class="font-Roboto">
+    <section id="home">
+      <img
+      src="./images/illustration-sign-up-mobile.svg"
+      alt="illustration image" class="mb-8"
+      />
+      <img src="./images/illustration-sign-up-desktop.svg" alt="desktop image" class="hidden">
+      <div class="text text-DarkGrey px-5 mt-3">
+        <h1 class="font-extrabold text-4xl">Stay updated!</h1>
+        <p class="font-light text-lg mt-6">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul>
+          <li class="flex p-2">
+            <img src="./images/icon-list.svg" alt="bullet" class="text-base"/>
+            <p class="pl-3 text-lg font-normal">Product discovery and
+              building what matters</p> 
+          </li>
+          <li class="flex p-2">
+            <img src="./images/icon-list.svg" alt="bullet" class="text-base"/>
+            <p class="pl-3 text-lg font-normal">Measuring to ensure
+              updates are a success</p> 
+          </li>
+          <li class="flex p-2">
+            <img src="./images/icon-list.svg" alt="bullet" class="text-base"/>
+            <p class="pl-3 text-lg font-normal">And much more!</p> 
+          </li>
+        </ul>
+        <form onsubmit="return false;" class="block mt-5">
+          <label for="email" class="pb-3 flex justify-between">Email address
+            <p id="error"></p>
+          </label>
+            <input type="email" id="email" name="email" placeholder="email@company" class="block py-4 px-4 w-full rounded-lg border-solid border-Grey border my-2">
+          <button type="submit" id="successButton" onclick="validateEmail()" class="bg-CharcoalGrey text-white p-4 text-lg rounded-lg w-full my-3"> Subscribe to monthly newsletter</button>
+        </form>
+    
+      </div>
+     
+    </section>
+    <section id="success" class="hidden">
+      <img src="./images/icon-success.svg" alt="success icon" />
+      <h1 class="font-extrabold text-4xl text-DarkGrey">Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to ash@loremcompany.com. Please open it
+        and click the button inside to confirm your subscription.
+      </p>
+      <button
+        type="submit" id="dismiss" onclick="dismissMessage()"
+        class="bg-CharcoalGrey text-white p-4 text-lg rounded-lg w-full my-3 bottom-7"
+      >
+        Dismiss message
+      </button>
+    </section>
+
+    <div class="attribution text-xs text-center">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-attribution">Frontend Mentor</a>. 
+      Coded by <a href="#" class="text-attribution">Betty</a>.
+  </body>
+  <script src="./script.js"></script>
 </html>
