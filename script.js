@@ -44,5 +44,5 @@ function hideDiv(id) {
 function dismissMessage() {
   success.style.display = "none";
   home.style.display = "flex";
-  emailInput == "";
+  document.getElementById("email").value = "";
 }
