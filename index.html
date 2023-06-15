@@ -14,81 +14,82 @@
   <body
     class="font-Roboto h-screen lg:bg-CharcoalGrey lg:flex lg:flex-col lg:justify-center lg:items-center"
   >
-    <section
-      id="home"
-      class="lg:bg-White lg:flex lg:w-1/2 lg:p-3 lg:m-auto lg:mt-36 lg:rounded-3xl"
-    >
-      <img
-        src="./images/illustration-sign-up-mobile.svg"
-        alt="illustration image"
-        class="mb-8 w-full lg:hidden"
-      />
-      <div class="text text-DarkGrey px-9 mt-3 lg:px-7 lg:pt-4">
-        <h1 class="font-extrabold text-4xl lg:text-center lg:mt-8">
-          Stay updated!
-        </h1>
-        <p class="font-light text-lg mt-6 lg:text-xs lg:mt-3 lg:py-2">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
-        <ul class="mt-4 lg:mt-3">
-          <li class="flex py-3 lg:pt-0">
-            <img
-              src="./images/icon-list.svg"
-              alt="bullet"
-              class="text-base lg:w-4 self-start pt-2 lg:pt-0"
+    <section id="home">
+      <div
+        class="lg:bg-White lg:flex lg:w-full lg:p-3 lg:m-auto lg:mt-36 lg:rounded-3xl"
+      >
+        <img
+          src="./images/illustration-sign-up-mobile.svg"
+          alt="illustration image"
+          class="mb-8 w-full lg:hidden"
+        />
+        <div class="text text-DarkGrey px-9 mt-3 lg:px-7 lg:pt-4">
+          <h1 class="font-extrabold text-4xl lg:text-center lg:mt-8">
+            Stay updated!
+          </h1>
+          <p class="font-light text-lg mt-6 lg:text-xs lg:mt-3 lg:py-2">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <ul class="mt-4 lg:mt-3">
+            <li class="flex py-3 lg:pt-0">
+              <img
+                src="./images/icon-list.svg"
+                alt="bullet"
+                class="text-base lg:w-4 self-start pt-2 lg:pt-0"
+              />
+              <p class="pl-3 text-lg font-normal lg:text-xs">
+                Product discovery and building what matters
+              </p>
+            </li>
+            <li class="flex py-3 lg:pt-0">
+              <img
+                src="./images/icon-list.svg"
+                alt="bullet"
+                class="text-base lg:w-4 self-start pt-2 lg:pt-0"
+              />
+              <p class="pl-3 text-lg font-normal lg:text-xs">
+                Measuring to ensure updates are a success
+              </p>
+            </li>
+            <li class="flex py-3 lg:pt-0">
+              <img
+                src="./images/icon-list.svg"
+                alt="bullet"
+                class="text-base lg:w-4"
+              />
+              <p class="pl-3 text-lg font-normal lg:text-xs">And much more!</p>
+            </li>
+          </ul>
+          <form onsubmit="return false;" class="block mt-5 lg:mt-2">
+            <label
+              for="email"
+              class="pb-3 flex justify-between lg:pb-1 lg:text-xs"
+              >Email address
+              <p id="error"></p>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="email@company"
+              class="block p-4 w-full rounded-lg border-solid border-Grey border my-2 outline-CharcoalGrey lg:my-0 lg:p-2"
             />
-            <p class="pl-3 text-lg font-normal lg:text-xs">
-              Product discovery and building what matters
-            </p>
-          </li>
-          <li class="flex py-3 lg:pt-0">
-            <img
-              src="./images/icon-list.svg"
-              alt="bullet"
-              class="text-base lg:w-4 self-start pt-2 lg:pt-0"
-            />
-            <p class="pl-3 text-lg font-normal lg:text-xs">
-              Measuring to ensure updates are a success
-            </p>
-          </li>
-          <li class="flex py-3 lg:pt-0">
-            <img
-              src="./images/icon-list.svg"
-              alt="bullet"
-              class="text-base lg:w-4"
-            />
-            <p class="pl-3 text-lg font-normal lg:text-xs">And much more!</p>
-          </li>
-        </ul>
-        <form onsubmit="return false;" class="block mt-5 lg:mt-2">
-          <label
-            for="email"
-            class="pb-3 flex justify-between lg:pb-1 lg:text-xs"
-            >Email address
-            <p id="error"></p>
-          </label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="email@company"
-            class="block p-4 w-full rounded-lg border-solid border-Grey border my-2 outline-CharcoalGrey lg:my-0 lg:p-2"
-          />
-          <button
-            type="submit"
-            id="successButton"
-            onclick="validateEmail()"
-            class="bg-CharcoalGrey text-white p-4 text-lg rounded-lg w-full my-3 hover:bg-Tomato lg:text-base lg:mt-4 lg:p-3"
-          >
-            Subscribe to monthly newsletter
-          </button>
-        </form>
+            <button
+              type="submit"
+              id="successButton"
+              onclick="validateEmail()"
+              class="bg-CharcoalGrey text-white p-4 text-lg rounded-lg w-full my-3 hover:bg-Tomato lg:text-base lg:mt-4 lg:p-3"
+            >
+              Subscribe to monthly newsletter
+            </button>
+          </form>
+        </div>
+        <img
+          src="./images/illustration-sign-up-desktop.svg"
+          alt="desktop image"
+          class="hidden lg:block lg:w-72"
+        />
       </div>
-      <img
-        src="./images/illustration-sign-up-desktop.svg"
-        alt="desktop image"
-        class="hidden lg:block lg:w-72"
-      />
     </section>
     <div class="attribution bottom-0 text-xs text-center lg:mt-4 lg:text-White">
       Challenge by

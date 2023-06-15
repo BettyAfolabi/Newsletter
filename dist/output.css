@@ -1351,6 +1351,18 @@ video {
     width: 18rem;
   }
 
+  .lg\:w-full{
+    width: 100%;
+  }
+
+  .lg\:w-3\/5{
+    width: 60%;
+  }
+
+  .lg\:w-4\/5{
+    width: 80%;
+  }
+
   .lg\:flex-col{
     flex-direction: column;
   }
