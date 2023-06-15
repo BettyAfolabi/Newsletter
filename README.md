@@ -5,7 +5,7 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 ### Links
 
 - Solution URL: [solution URL](https://github.com/BettyAfolabi/Newsletter)
-- Live Site URL: [myAge-app](https://mynewslettersolution.netlify.app/)
+- Live Site URL: [Newsletter Sign-up Form](https://mynewslettersolution.netlify.app/)
 
 [mySolution-image](./images/Screenshot.png)
 
