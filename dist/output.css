@@ -524,6 +524,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.bottom-0{
+  bottom: 0px;
+}
+
 .m-3{
   margin: 0.75rem;
 }
