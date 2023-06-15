@@ -1,25 +1,13 @@
-// function showSuccess() {
-//   const successMessage = document.getElementById("success");
-//   const dismiss = document.getElementById("dismiss");
-//   const home = document.getElementById("home");
-
-//   successMessage.style.display = "block";
-//   home.style.display = "none";
-
-//   // dismiss.addEventListener("click", function () {
-//   //   successMessage.style.display = "none";
-//   //   home.style.display = "block";
-//   // });
-// }
-
 function validateEmail() {
   let email = document.getElementById("email");
   let emailInput = email.value;
+  document.getElementById("displayEmail").textContent = emailInput;
 
   if (emailInput == "") {
     setError("Email is required");
     error.style.color = "red";
     email.style.borderColor = "red";
+    emailInput.style.color = "red";
     return false;
   }
 
@@ -27,6 +15,9 @@ function validateEmail() {
 
   if (!email_pattern.test(emailInput)) {
     setError("Valid email required");
+    error.style.color = "red";
+    email.style.borderColor = "red";
+    emailInput.style.color = "red";
     return false;
   }
 
@@ -52,5 +43,6 @@ function hideDiv(id) {
 }
 function dismissMessage() {
   success.style.display = "none";
-  home.style.display = "block";
+  home.style.display = "flex";
+  emailInput == "";
 }

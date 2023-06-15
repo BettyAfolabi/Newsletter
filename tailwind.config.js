@@ -7,6 +7,7 @@ module.exports = {
         Tomato: "hsl(4, 100%, 67%)",
         Grey: "hsl(231, 7%, 60%)",
         CharcoalGrey: "hsl(235, 18%, 26%)",
+        White: "hsl(0, 0%, 100%)",
         attribution: "hsl(228, 45%, 44%)",
       },
       textColor: {
