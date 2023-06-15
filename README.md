@@ -4,26 +4,28 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 
 ### Links
 
-- Solution URL: [solution URL](https://github.com/BettyAfolabi/myAge-app)
-- Live Site URL: [myAge-app](https://myageapp.netlify.app/)
+- Solution URL: [solution URL](https://github.com/BettyAfolabi/Newsletter)
+- Live Site URL: [myAge-app](https://mynewslettersolution.netlify.app/)
 
 [mySolution-image](./images/Screenshot.png)
 
-### Built with
+## My process
 
-- Semantic HTML5 markup
-- Tailwind CSS
-- JavaScript
-- Flexbox
-- Mobile-first workflow
+    ### Built with
 
-### What I learned
+    - Semantic HTML5 markup
+    - Tailwind CSS
+    - JavaScript
+    - Flexbox
+    - Mobile-first workflow
 
-JavaScript Email validation, hiding and displaying on validation
+    ### What I learned
 
-### Continued development
+    JavaScript Email validation, hiding and displaying on validation
 
-On exiting success message, to be able to make input field empty.
+    ### Continued development
+
+    On exiting success message, to be able to make input field empty.
 
 ## Author
 
